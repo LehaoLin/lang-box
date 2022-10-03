@@ -18,7 +18,8 @@ const { GH_TOKEN, GIST_ID, USERNAME, DAYS } = process.env;
 
     const api = new ApiClient(GH_TOKEN);
     const username = USERNAME;
-    const days = Math.max(1, Math.min(30, Number(DAYS || 14)));
+//     const days = Math.max(1, Math.min(30, Number(DAYS || 14)));
+    const days = Math.max(1, 365);
 
     console.log(`username is ${username}.`);
     console.log(`\n`);
